@@ -1,0 +1,8 @@
+.Main {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto 0;
+}

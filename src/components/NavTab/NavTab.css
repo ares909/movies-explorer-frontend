@@ -1,0 +1,32 @@
+.NavTab {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header__menu-link:last-child {
+    margin-right: 0;
+}
+
+.header__menu-button {
+    color: white;
+    padding: 8px 20px 8px;
+    cursor: pointer;
+    background: #3456F3;
+    border-radius: 3px;
+    border: none;
+}
