@@ -19,7 +19,7 @@ function AboutMe() {
               сменил сферу и устроился в компанию Accenture. Есть жена и сын.
               Люблю проводить время с семьей и играть в игры.
             </p>
-            <div>
+            <div className='aboutme__links-container'>
               <a
                 href='https://vk.com/areszor'
                 className='aboutme__body-text aboutme__body-text_link hover'

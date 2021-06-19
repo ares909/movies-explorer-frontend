@@ -11,7 +11,7 @@ function Main() {
       <AboutProject></AboutProject>
       <Techs></Techs>
       <AboutMe></AboutMe>
-      {/* <Footer></Footer> */}
+      
     </main>
   );
 }

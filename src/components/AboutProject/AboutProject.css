@@ -12,7 +12,6 @@
     margin: 0 0 70px;
     padding-bottom: 23px;
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-    
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -26,15 +25,21 @@
     flex-direction: column;
 }
 
-.aboutProject__body-containter {
+.aboutProject__body-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.aboutProject__body-containter {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .aboutProject__body-text-header {
     max-width: 550px;
-    margin: 0 auto 26px;
+    margin: 0 0 26px;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -59,7 +64,6 @@
 
 .aboutProject__progress-bar-text {
     margin: 0;
-    
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -90,4 +94,74 @@
     flex-basis: 20%;
     background-color: inherit;
     color: #A0A0A0;
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    .aboutProject__header {
+        padding: 90px 50px 0;
+    }
+    .aboutProject__body {
+        padding: 0 50px 90px;
+    }
+    .aboutProject__body-text-header {
+        margin: 0 auto 22px;
+    }
+    .aboutProject__body-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .aboutProject__progress-bar {
+        margin-top: 93px;
+    }
+    .aboutProject__progress-bar_tech {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 767px) {
+    .aboutProject__header {
+        padding: 70px 6.75% 0;
+    }
+    .aboutProject__header-text {
+        margin: 0 0 60px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .aboutProject__body {
+        padding: 0 6.75% 70px;
+    }
+    .aboutProject__body-box {
+        flex-direction: column;
+    }
+    .aboutProject__body-containter {
+        flex-direction: column;
+        margin-bottom: 56px;
+    }
+    .aboutProject__body-containter:last-child {
+        margin-bottom: 0;
+    }
+    .aboutProject__body-text-header {
+        margin: 0 auto 16px;
+    }
+    .aboutProject__body-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .aboutProject__progress-bar {
+        margin-top: 60px;
+    }
+    .aboutProject__progress-bar_tech {
+        margin-top: 0;
+    }
+    .aboutProject__progress-bar-text {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 11px 10px 11px;
+    }
+    .aboutProject__progress-bar-text:first-child {
+        flex-basis: 35%;
+    }
+    .aboutProject__progress-bar-text_tech:first-child {
+        flex-basis: 35%;
+    }
 }
