@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.Footer_disabled {
+    display: none;
+}
+
 .footer__text {
     padding-top: 79px;
     margin: 0 auto 20px;

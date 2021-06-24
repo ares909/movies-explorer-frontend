@@ -28,6 +28,7 @@
 .aboutProject__body-box {
     display: flex;
     flex-direction: row;
+    column-gap: 10px;
     justify-content: space-between;
 }
 
@@ -104,7 +105,7 @@
         padding: 0 50px 90px;
     }
     .aboutProject__body-text-header {
-        margin: 0 auto 22px;
+        margin: 0 0 22px;
     }
     .aboutProject__body-text {
         font-size: 12px;

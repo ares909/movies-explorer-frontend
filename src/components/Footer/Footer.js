@@ -1,10 +1,13 @@
+import { useLocation } from 'react-router-dom';
 function Footer() {
+  const location = useLocation()
+  const className = (location.pathname === '/profile' || location.pathname === '/signin' || location.pathname === '/signup' || location.pathname === '/404') ? 'Footer Footer_disabled' : 'Footer'
   return (
-    <section className='Footer'>
+    <section className={className}>
       <p className='footer__text'>
         Учебный проект Яндекс.Практикум х BeatFilm.
       </p>
-      <p className='footer__bar'>
+      <div className='footer__bar'>
         <p className='footer__bar-text'>© 2021</p>
         <div className='footer__nav-container footer__bar-text'>
           <a
@@ -32,7 +35,7 @@ function Footer() {
             VKontakte
           </a>
         </div>
-      </p>
+      </div>
     </section>
   );
 }

@@ -1,10 +1,6 @@
 .Main {
-    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
-    font-family: Inter, sans-serif;
-    max-width: 100vw;
-    margin: 0 auto 0;
 }
 
 @media screen and (min-width:768px) and (max-width: 1279px) {
