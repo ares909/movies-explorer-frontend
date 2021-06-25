@@ -1,0 +1,6 @@
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    .header__menu-container_account {
+        flex-direction: row;
+        margin: 621px auto 0px;
+    }
+}

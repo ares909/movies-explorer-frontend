@@ -1,0 +1,110 @@
+.header__menu-burger {
+    display: none;
+}
+
+.header__menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__menu-profile {
+    margin-left: 44px;
+}
+
+.header__menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header__menu-link_disabled {
+    display: none;
+}
+
+.header__menu-link_profile {
+    margin-right: 17px;
+    font-weight: 500;
+}
+
+.header__menu-link:last-child {
+    margin-right: 0;
+}
+
+.header__menu-link_image {
+    display: flex;
+    position: relative;
+    width: 26px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__menu-link_profile:last-child {
+    margin-right: 0;
+}
+
+.header__menu-profile-image {
+    object-fit: contain;
+    width: 12px;
+    height: 14px;
+}
+
+.header__menu-button {
+    color: white;
+    padding: 8px 20px 8px;
+    cursor: pointer;
+    background: #3456F3;
+    border-radius: 3px;
+    border: none;
+}
+
+.header__menu-burger {
+    display: none;
+    color: white;
+    padding: 8px 20px 8px;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    .header__menu-burger {
+        display: block;
+        margin-left: auto;
+    }
+    .header__menu-link {
+        margin: 28px 0 28px;
+        /* border-bottom: 1px solid black; */
+    }
+    
+    .header__menu-link:last-child {
+        margin: 0;
+    }
+    .header__menu-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 767px) {
+    .header__menu-link {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .header__menu-link {
+        margin-right: 14px;
+    }
+    .header__menu-link:last-child {
+        margin-right: 0;
+    }
+    .header__menu-button {
+        padding: 5px 12px 5px;
+    }
+}
