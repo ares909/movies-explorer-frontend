@@ -5,7 +5,10 @@ import AccountTab from '../AccountTab/AccountTab';
 import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-function Header() {
+
+function Header({hadleOpenMenu, loggedIn}) {
+
+
   const location = useLocation();
   if (
     location.pathname === '/signin' ||
@@ -23,10 +26,10 @@ function Header() {
             <img className='header__logo' src={logo} alt='лого' />
           </HashLink>
           <div className='header__tabs-container'>
-            <NavTab></NavTab>
-            <AccountTab></AccountTab>
+            <NavTab loggedIn={loggedIn}></NavTab>
+            <AccountTab loggedIn={loggedIn}></AccountTab>
           </div>
-          <button className='header__burger hover'>
+          <button className='header__burger hover' onClick={hadleOpenMenu}>
             <img className='header__burger-image' src={burger} alt='бургер' />
           </button>
         </div>

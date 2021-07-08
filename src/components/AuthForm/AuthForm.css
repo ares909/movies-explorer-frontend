@@ -9,10 +9,12 @@
     padding: 0;
     margin: 0 0 134px;
     border: none;
+    
 }
 
 .authForm__form-fieldset_login {
     margin: 0 0 234px;
+    position: relative;
 }
 
 .authForm__logo {
@@ -35,6 +37,7 @@
     font-size: 11px;
     line-height: 13px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .authForm__form-label {
@@ -86,6 +89,19 @@
 .authForm__form-button:last-child {
     margin: 0 auto 0;
 }
+
+.authForm__form-button_disabled {
+    opacity: 0.2;
+    background-color: white;
+    color: black;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+  .authForm__form-button_disabled:hover {
+    opacity: 0.2;
+  }
+  
 
 .authForm__form-button_red {
     color: red;
