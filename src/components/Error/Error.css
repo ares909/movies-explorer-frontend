@@ -11,4 +11,12 @@
     font-size: 10px;
     line-height: 12px;
     display: block;
+    position: absolute;
+    bottom: -15px;
+    left: auto;
+}
+
+.Error_active_server {
+    position: sticky;
+    align-self: center;
 }

@@ -1,8 +1,15 @@
-import AuthForm from '../AuthForm/AutoForm';
-function Register() {
+import AuthForm from '../AuthForm/AuthForm';
+function Register({ handleChange, handleSubmit, errors, isValid, serverError, errorVisible }) {
   return (
     <section className='Register'>
-      <AuthForm></AuthForm>
+      <AuthForm
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        errors={errors}
+        isValid={isValid}
+        serverError={serverError}
+        errorVisible={errorVisible}
+      ></AuthForm>
     </section>
   );
 }

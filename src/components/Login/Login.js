@@ -1,8 +1,22 @@
-import AuthForm from '../AuthForm/AutoForm';
-function Login() {
+import AuthForm from '../AuthForm/AuthForm';
+function Login({
+  handleChange,
+  handleSubmit,
+  errors,
+  isValid,
+  serverError,
+  errorVisible,
+}) {
   return (
     <section className='Login'>
-      <AuthForm></AuthForm>
+      <AuthForm
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        errors={errors}
+        isValid={isValid}
+        serverError={serverError}
+        errorVisible={errorVisible}
+      ></AuthForm>
     </section>
   );
 }
